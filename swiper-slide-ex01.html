@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swiper-slide-ex01</title>
+    <!-- icon -->
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- jquery js -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- Css -->
+    <link rel="stylesheet" href="css/swiper-slide-ex01.css">
+</head>
+<body>
+    <div class="wrap">
+      <!-- header -->
+      <header>
+          <div class="header-top">
+            <div class="container clearfix">
+              <ul class="top-menu clearfix">
+                <li><a href="#">국립중앙박물관</a></li>
+                <li class="museumLink">
+                  <a href="#">
+                    소속박물관 어린이박물관 바로가기
+                    <img src="images/ico_sm_black_open.png" alt="위로보는 화살표" data-openimg="images/ico_sm_black_open.png" data-closeimg="images/ico_sm_white_close.png">
+                  </a>
+                  <ul class="linkList">
+                    <li><a href="#" target="_blank">국립경주박물관</a></li>
+                    <li><a href="#" target="_blank">국립광주박물관</a></li>
+                    <li><a href="#" target="_blank">국립전주박물관</a></li>
+                    <li><a href="#" target="_blank">국립대구박물관</a></li>
+                    <li><a href="#" target="_blank">국립부여박물관</a></li>
+                    <li><a href="#" target="_blank">국립공주박물관</a></li>
+                    <li><a href="#" target="_blank">국립진주박물관</a></li>
+                    <li><a href="#" target="_blank">국립청주박물관</a></li>
+                    <li><a href="#" target="_blank">국립김해박물관</a></li>
+                    <li><a href="#" target="_blank">국립제주박물관</a></li>
+                    <li><a href="#" target="_blank">국립춘천박물관</a></li>
+                    <li><a href="#" target="_blank">국립나주박물관</a></li>
+                    <li><a href="#" target="_blank">국립익산박물관</a></li>
+					        </ul>
+                </li>
+                <li>
+                  <a href="#" class="arrow">
+                    English
+                    <img src="images/ico_sm_black_open.png" alt="옆으로 보는 화살표">
+                  </a>
+                </li>
+                <li class="itemwrap">
+                    <ul class="item-menu">
+                      <li>
+                        <a href="#">
+                          <img src="images/ico_header_item1.png" alt="아이템1">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="images/ico_header_item2_new.png" alt="아이템2">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="images/ico_header_item3.png" alt="아이템3">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="images/ico_header_item4.png" alt="아이템4">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="images/ico_header_item5.png" alt="아이템5">
+                        </a>
+                      </li>
+                    </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- 줄로 쭉 나눠진 경우 container을 따로 나눈다 -->
+          <div class="header-bottom">
+            <div class="container clearfix">
+              <h1 id="logo">
+                <a href="#">
+                  <img src="images/logo_child.png" alt="로고">
+                </a>
+              </h1>
+              <nav>
+                <ul class="menu">
+                  <li>
+                    <a href="#">관람</a>
+                    <ul class="submenu">
+                      <li>
+                        <a href="#">알려드려요</a>
+                      </li>
+                      <li>
+                        <a href="#">이용안내</a>
+                      </li>
+                      <li>
+                        <a href="#">시설안내</a>
+                      </li>
+                      <li>
+                        <a href="#">오시는길</a>
+                      </li>
+                      <li>
+                        <a href="#">자주하는질문</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">전시</a>
+                    <ul class="submenu">
+                      <li>
+                        <a href="#">상설 전시</a>
+                      </li>
+                      <li>
+                        <a href="#">온라인 전시</a>
+                      </li>
+                      <li>
+                        <a href="#">지난 전시</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">교육</a>
+                    <ul class="submenu">
+                      <li>
+                        <a href="#">전체프로그램</a>
+                      </li>
+                      <li>
+                        <a href="#">개인</a>
+                      </li>
+                      <li>
+                        <a href="#">단체</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">자료</a>
+                    <ul class="submenu">
+                      <li>
+                        <a href="#">동영상</a>
+                      </li>
+                      <li>
+                        <a href="#">활동지</a>
+                      </li>
+                      <li>
+                        <a href="#">연구자료</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">소개</a>
+                    <ul class="submenu">
+                      <li>
+                        <a href="#">어린이박물관 소개</a>
+                      </li>
+                      <li>
+                        <a href="#">박물관 상징 소개</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+              <ul class="log-in clearfix">
+                <li>
+                  <a href="#">로그인</a>
+                </li>
+                <li>
+                  <a href="#">회원가입</a>
+                </li>
+                <li>
+                  <a href="#" class="log-a">
+                    <img src="images/btn_search_open.png" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </header>
+      <!-- main -->
+      <main>
+        <!-- visual -->
+        <section class="visual">
+          <div class="container">
+            <!-- 부캐를 적어주기 -->
+              <div class="swiper sw-visual">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="images/2351272.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="images/650778.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="images/1017285.jpg" alt=""></div>
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="control-box">
+                    <div class="swiper-pagination"></div>
+                    <button type="button" class="swiper-btn-ctrl btn-pause"></button>
+                    <!-- <button type="button" class="swiper-btn-ctrl btn-play"></button> -->
+                  </div>
+              </div>
+          </div>
+        </section>
+        <!-- section-info -->
+        <section class="section-info">
+          <div class="container">
+            <div class="info-header">
+              <ul class="info-area">
+                <li class="area1">
+                  <img src="images/ico_main_cont_01.png" alt="">
+                  관람시간
+                </li>
+                <li class="area2">
+                  <strong>10:00~17:50</strong>
+                  <span>(하루 총 5회 관람)</span>
+                </li>
+                <li class="area3">
+                  <img src="images/ico_main_cont_02.png" alt="">
+                  관람료
+                </li>
+                <li class="area4">무료</li>
+              </ul>
+              <div class="come-way">
+                오시는 길
+                <img src="images/ico_main_arrow_01.png" alt="">
+              </div>
+            </div>
+            <!-- reserve-scedule -->
+            <div class="reserve-scedule">
+              <div class="reserve schedule">
+                <div class="reserve-date">
+                  <img src="images/ico_black_calender.png" alt="">
+                  <p><strong>2025.05.16 (오늘)</strong> 관람 예약 현황</p>
+                </div>
+                <ul class="reserve-graph">
+                  <li>
+                    <div class="info1">1회차</div>
+                    <div class="info2">10:00 ~ 11:50</div>
+                    <div class="info3">접수마감</div>
+                    <div class="info4">
+                      <div class="info-in">
+                        <img src="images/ico_reserve_off.png" alt="">
+                        접수마감
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="info1">2회차</div>
+                    <div class="info2">12:00 ~ 13:20</div>
+                    <div class="info3">접수마감</div>
+                    <div class="info4">
+                      <div class="info-in">
+                        <img src="images/ico_reserve_off.png" alt="">
+                        접수마감
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="info1">3회차</div>
+                    <div class="info2">13:30 ~ 14:50</div>
+                    <div class="info3">접수마감</div>
+                    <div class="info4">
+                      <div class="info-in">
+                        <img src="images/ico_reserve_off.png" alt="">
+                        접수마감
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="info1">4회차</div>
+                    <div class="info2">15:00 ~ 16:20</div>
+                    <div class="info3">172명</div>
+                    <div class="info5">
+                      <div class="info-in">
+                        <img src="images/ico_reserve_on.png" alt="">
+                        예약가능
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="info1">5회차</div>
+                    <div class="info2">16:30 ~ 17:50</div>
+                    <div class="info3">257명</div>
+                    <div class="info5">
+                      <div class="info-in">
+                        <img src="images/ico_reserve_on.png" alt="">
+                        예약가능
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="reserve reserve-img">
+                <div class="r-display">
+                  <a href="#">
+                    <img src="images/bg_reserve_01.png" alt="">
+                    <p>관람예약</p>
+                  </a>
+                </div>
+                <div class="r-display">
+                  <a href="#">
+                    <img src="images/bg_reserve_02.png" alt="">
+                    <p>교육예약</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- <section></section> -->
+        <!-- <section></section> -->
+        <section class="slider2">
+          <div class="container">
+            <div class="display">
+              <div class="display-top">
+                <h2>전시</h2>
+                <div class="button">
+                  <div class="btn-prev">이전</div>
+                  <div class="control">stop</div>
+                  <div class="btn-next">다음</div>
+                </div>
+              </div>
+              <div class="swiper sw-display">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="jpg2/1BACC044-FED2-6484-E23F-AE2B419C0935.jpg_thumb.jpg" alt="">
+                    </a>
+                    <div class="progress">
+                      <span class="sp1">진행중</span>
+                      <span class="sp2">상설전시</span>
+                    </div>
+                    <div class="textbox">
+                      <p class="p1">다르게 생각해요</p>
+                      <p class="p2">2021-12-15 ~ 현재</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="jpg2/635F4D5F-2240-1DDB-298E-CAE2CC96EF7B.jpg_thumb.jpg" alt="">
+                    </a>
+                    <div class="progress">
+                      <span class="sp1">진행중</span>
+                      <span class="sp2">상설전시</span>
+                    </div>
+                    <div class="textbox">
+                      <p class="p1">마음을 이어요</p>
+                      <p class="p2">2024-11-19 ~ 현재</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="jpg2/A278621D-86B1-DE32-0FA2-8B084BAE5B39.jpg_thumb.jpg" alt="">
+                    </a>
+                    <div class="progress">
+                      <span class="sp1">진행중</span>
+                      <span class="sp2">상설전시</span>
+                    </div>
+                    <div class="textbox">
+                      <p class="p1">새롭게 관찰해요</p>
+                      <p class="p2">2021-12-15 ~ 현재</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="education">
+              <h2>교육</h2>
+              <div class="swiper sw-education">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <img src="jpg2/b408025a0fc14cb787f0080e9e56fc6c.jpg" alt="">
+                      </a>
+                      <div class="progress">
+                        <span class="sp1">진행중</span>
+                        <span class="sp2">상설전시</span>
+                      </div>
+                      <div class="textbox">
+                        <p class="p1">[유아단체]손으로 만나는 옛날 물건</p>
+                        <p class="p2">2025-02-26 ~ 2025-11-13</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <img src="jpg2/b408025a0fc14cb787f0080e9e56fc6c.jpg" alt="">
+                      </a>
+                      <div class="progress">
+                        <span class="sp1">진행중</span>
+                        <span class="sp2">상설전시</span>
+                      </div>
+                      <div class="textbox">
+                        <p class="p1">[유아단체]손으로 만나는 옛날 물건</p>
+                        <p class="p2">2025-02-26 ~ 2025-11-13</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <img src="jpg2/b408025a0fc14cb787f0080e9e56fc6c.jpg" alt="">
+                      </a>
+                      <div class="progress">
+                        <span class="sp1">진행중</span>
+                        <span class="sp2">상설전시</span>
+                      </div>
+                      <div class="textbox">
+                        <p class="p1">[유아단체]손으로 만나는 옛날 물건</p>
+                        <p class="p2">2025-02-26 ~ 2025-11-13</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <img src="jpg2/b408025a0fc14cb787f0080e9e56fc6c.jpg" alt="">
+                      </a>
+                      <div class="progress">
+                        <span class="sp1">진행중</span>
+                        <span class="sp2">상설전시</span>
+                      </div>
+                      <div class="textbox">
+                        <p class="p1">[유아단체]손으로 만나는 옛날 물건</p>
+                        <p class="p2">2025-02-26 ~ 2025-11-13</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="button">
+                <div class="edu-btn-prev">
+                  이전
+                  <!-- <span class="material-icons">
+                    chevron_left
+                  </span> -->
+                </div>
+                <div class="edu-control">stop</div>
+                <div class="edu-btn-next">
+                  다음
+                  <!-- <span class="material-icons">
+                    chevron_right
+                  </span> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- section3 -->
+        <section class="section3">
+          <div class="container">
+            <h2><a href="">알려드려요</a></h2>
+            <div class="express">
+              <div class="notice-fix">
+                <div class="notice1">
+                  <strong>2025년 상반기 단체 입장 안내</strong>
+                  <a href="#">
+                    <p>2025년 상반기 어린이박물관 단체 입장을 아래와 같이 운영합니다.   - 단체 입장 기간 -2025년 3월 17일(월) ~ 7월 18일(금)   - 단체 예약 접수 시작일 -20 ...</p>
+                  </a>
+                  <span>2025-01-06</span>
+                </div>
+                <ul class="notice2">
+                  <li>
+                    <a href="#">
+                      <strong>[공지] 성인 현장 답사(견학) 안내</strong>
+                    </a>
+                    <div class="notice2-in">
+                      <span>2023-09-06</span>
+                      <img src="images/ico_main_notice_arrow.png" alt="">
+                    </div>
+                  </li> 
+                  <li>
+                    <a href="#">
+                      <strong>2025년 특별전 ‘마나 모아나-신성한 바다의 예술, 오세아니아’를 즐기는 세 가지 방법 안내!</strong>
+                    </a>
+                    <div class="notice2-in">
+                      <span>2023-04-29</span>
+                      <img src="images/ico_main_notice_arrow.png" alt="">
+                    </div>
+                  </li> 
+                  <li>
+                    <a href="#">
+                      <strong>가정의 달 맞이, 명사들이 전하는 '어린이에 관한 정다운 이야기' 영상 송출(5월 매주 수요일 오후 8시)</strong>
+                    </a>
+                    <div class="notice2-in">
+                      <span>2023-04-21</span>
+                      <img src="images/ico_main_notice_arrow.png" alt="">
+                    </div>
+                  </li> 
+                  <li>
+                    <a href="#">
+                      <strong>[임시휴관안내] 어린이박물관 임시 휴관 안내(금일 2025.02.20. 목)</strong>
+                    </a>
+                    <div class="notice2-in">
+                      <span>2023-02-20</span>
+                      <img src="images/ico_main_notice_arrow.png" alt="">
+                    </div>
+                  </li> 
+                </ul>
+              </div>
+            </div>
+            <h2 class="h2-with"><a href="#">함께 이야기해요! 어린이박물관 <span>SNS</span></a></h2>
+            <div class="with">
+              <ul>
+                <li>
+                  <a href="#">
+                    <img src="images/ico_main_sns_01.png" alt="">
+                    <span>네이버 블로그</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="images/ico_main_sns_02.png" alt="">
+                    <span>페이스북</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="images/ico_main_sns_03.png" alt="">
+                    <span>유튜브</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="images/ico_main_sns_04_new.png" alt="">
+                    <span>X</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="images/ico_main_sns_05.png" alt="">
+                    <span>인스타그램</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- footer -->
+      <footer>
+      <div class="footer-top clearfix">
+        <div class="container">
+          <ul class="footer-menu">
+            <li>
+              <a href="#">오시는 길</a>
+            </li>
+            <li>
+              <a href="#">사이트맵</a>
+            </li>
+            <li>
+              <a href="#">이용약관</a>
+            </li>
+            <li>
+              <a href="#"><strong>개인정보처리방침</strong></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="adress">
+            <p>04383 서울특별시 용산구 서빙고로 137(용산동6가 168-6)</p>
+            <p>대표전화 : 02-2077-9647~9648</p>
+            <p>COPYRIGHT(C) NATIONAL MUSEUM OF KOREA. ALL RIGHTS RESERVED.</p>
+          </div>
+          <div class="linkwrap clearfix">
+            <div class="link-box">
+                <a href="#">
+                  <img src="images/child_web_access_2024.png" alt="웹접근성">
+                </a>
+            </div>
+            <div class="select">
+              <a href="#">
+                <span>유사기관바로가기</span>
+                <img src="images/ico_lg_black_open.png" alt="">
+              </a>
+          </div>
+          </div>
+        </div>
+      </div>
+  </footer>
+    </div>
+    <script src="js/swiper-slide-ex01.js">
+    </script>
+</body>
+</html>
